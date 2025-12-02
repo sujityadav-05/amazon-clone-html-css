@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+
+}
+.logo{
+    height: 50px;
+    width: 100%;
+    background-image: url('assests/logo.png');
+    background-size: cover;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second{
+    font-size:1rem;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    background-color: pink;
+    width: 600px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: center;
+}
+.search-select{
+    background-color: #f3f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    padding-left: 10px;
+}
+.search-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.search-icon{
+    background-color: #febd69;
+    width: 40px;
+    display: flex;
+    justify-content: center; /*centering horizontally */
+    align-items: center;   /*vertically centering */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:#0f1111
+}
+span{
+    font-size: 0.9rem;
+}
+.nav-search:hover{
+    border:2px solid orange;
+}
+
+.nav-cart i{
+    font-size: 1.5rem;
+
+}
+.nav-cart{
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.panel{
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops a{
+    color: white;
+    width: 80%;
+    font-size: 0.9rem;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+/*hero section*/
+.hero-section{
+    height: 350px;
+    background-image: url('assests/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    bottom: 50px;
+    width: 90%;
+    margin-bottom: 25px;
+    height: 40px;
+
+}
+.hero-msg a{
+    color: #007150;
+}
+
+.shop-section{
+    
+    display: flex;
+    background-color: rgb(244, 161, 7);
+    justify-content: space-evenly;
+}
+.box{
+    /* border: 2px solid black; */
+    height: 400px;
+    width:23%;
+    background-color: white;
+    padding: 20px 15px 15px 15px;
+    margin-top: 15px;
+    
+   
+
+}
+.box a{
+    text-decoration: none;
+    
+}
+.box-img{
+    
+    height: 300px;
+    background-size: cover;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.box1{
+    margin-left :15px;
+}
+.box2{
+    margin-left :15px;
+}
+.box3{
+    margin-left :15px;
+}
+.box4{
+    margin-left :15px;
+    margin-right :15px;
+}
+footer{
+    margin-top: 20px;
+}
+.foot-panel1{
+    height: 50px;
+    background-color: #352f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.foot-panel2{
+    background-color: #222f3e;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+li{
+    margin-top:10px;
+}
+li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.foot-panel3{
+    background-color: #222f3e;
+    color: white;
+    border-top:0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+    background-image: url('assests/logo.png');
+    background-size: cover;
+}
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 25px;
+}
+.pages a{
+    color: white;
+    font-size:0.8rem;
+    padding-left: 15px;
+    text-decoration:none;
+}
+/* ===========================
+   Tablet View (<= 992px)
+   =========================== */
+@media (max-width: 992px) {
+
+    /* Reduce navbar spacing */
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    /* Search bar smaller */
+    .nav-search {
+        width: 400px;
+    }
+
+    /* Reduce panel spacing */
+    .panel-ops a {
+        margin-left: 15px;
+        font-size: 0.85rem;
+    }
+
+    /* 4 boxes -> 2 boxes */
+    .shop-section {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Footer columns wrap */
+    .foot-panel2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .foot-panel2 li {
+        width: 45%;
+    }
+}
+
+/* ===========================
+   Mobile View (<= 600px)
+   =========================== */
+@media (max-width: 600px) {
+
+    /* Navbar becomes vertical */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    /* Hide address & returns to reduce clutter */
+    .nav-address,
+    .nav-return {
+        display: none;
+    }
+
+    /* Make nav items centered */
+    .navbar > * {
+        margin: 0 auto;
+    }
+
+    /* Search bar full width */
+    .nav-search {
+        width: 90%;
+    }
+
+    /* Panel becomes vertical */
+    .panel {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .panel-ops a {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-msg {
+        height: auto;
+        padding: 10px;
+        font-size: 0.85rem;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-msg p {
+        margin: 0;
+    }
+
+    /* SHOP SECTION: single column boxes */
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px auto !important;
+    }
+
+    /* Footer becomes vertical */
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .foot-panel2 li {
+        width: 100%;
+        margin: auto;
+    }
+
+    .pages a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* ===========================
+   Extra Small Devices (<= 400px)
+   =========================== */
+@media (max-width: 400px) {
+
+    .search-input {
+        font-size: 0.8rem;
+    }
+
+    .panel-ops a {
+        margin-left: 5px;
+        font-size: 0.75rem;
+    }
+
+    .box h2 {
+        font-size: 1rem;
+    }
+
+    .box a {
+        font-size: 0.8rem;
+    }
+}
